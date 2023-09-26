@@ -19,7 +19,7 @@ from .errors import ServiceNowError, AuthError, UnexpectedAPIResponse
 
 
 DEFAULT_HEADERS = dict(Accept="application/json")
-
+display = Display()
 
 class Response:
     def __init__(self, status, data, headers=None):
