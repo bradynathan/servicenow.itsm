@@ -178,8 +178,8 @@ class Client:
             headers["Content-type"] = "application/json"
         elif bytes is not None:
             data = bytes
-        display.debug("Request URL: %s" url)
-        display.debug("Request Method: %s" url)
+        display.debug("Request URL: %s" % url)
+        display.debug("Request Method: %s" % method)
         return self._request(method, url, data=data, headers=headers)
 
     def get(self, path, query=None):
